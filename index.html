@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1>Survey Form</h1>
+    </header>
+    
+    <section>
+
+        <form action="">
+            
+            <p>Let Us Know how we can improve freeCodeCamp</p>
+
+            <div>
+                <label for="username">Name</label>
+                <input type="text" name="u_name" id="username" required placeholder="Enter your Name">
+            </div>
+            <br>
+
+            <div>
+                <label for="useremail">Email</label>
+                <input type="email" name="u_email" id="useremail" required placeholder="Enter your Email">
+            </div>
+            <br>
+
+            <div>
+                <label for="userage">Age</label>
+                <input type="number" name="u_age" id="userage" required placeholder="Age">
+            </div>
+            <br>
+
+            <div>
+                <label for="role">Which Option best describes your current role? </label>
+                <select name="Role" id="role" required>
+                    <option value="student">Student</option>
+                    <option value="developer">Developer</option>
+                    <option value="software Engineer">Software Engineer</option>
+                    <option value="data Scientist">Data Scientist</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <p>How Likely is that you would recommend freeCodeCamp to a friend :</p> 
+
+                <input type="radio" name="recommend" id="rd_1" value="definitely"> <label for="rd_1"> Definitely</label>
+                <br>
+
+                <input type="radio" name="recommend" id="rd_2" value="maybe"> <label for="rd_2">Maybe</label> 
+                <br>
+
+                <input type="radio" name="recommend" id="rd_3" value="not sure"> <label for="rd_3">Not Sure</label>
+            </div>
+            <br>
+
+            <div>
+                <p>Things that should be improved in the future (Check all that apply):</p>
+
+                <input type="checkbox" id="frontend" value="front_end"> <label for="frontend">Front-end Projects</label> 
+                <br>
+
+                <input type="checkbox" id="backend" value="back_end"> <label for="backend">Back-end Projects</label> 
+                <br>
+
+                <input type="checkbox" id="dt" value="data_visualization"> <label for="dt">Data Visualization</label> 
+            </div>
+            <br>
+
+            <input type="submit" value="submit">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+</body>
+</html>
